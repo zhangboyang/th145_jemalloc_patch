@@ -1,0 +1,11 @@
+# patch out aslr
+# equal editbin /DYNAMICBASE:NO xxx.exe
+
+<th145_full_patched.exe
+
+?303058e8d06af3f74a8e5d2cc9883595
+
+:19e
+00
+
+>th145_full_patched_without_aslr.exe

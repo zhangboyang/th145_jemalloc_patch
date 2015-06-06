@@ -1,0 +1,20 @@
+# patch script: th145.exe -> th145_simple_patched.exe
+# generated at 2015/06/06 15:48:22
+
+# read old file
+<th145.exe
+
+# check input md5sum
+?f54bdd766533707cfbc82a1e9c86d24f
+
+:2579a0 // make antidebugger1 dummy
+C3
+
+:258a20 // make antidebugger2 dummy
+C3
+
+# check output md5sum
+?39126f2d5e1d789f63b548bb9ff7cd95
+
+# write new file
+>th145_simple_patched.exe
